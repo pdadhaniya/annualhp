@@ -1,5 +1,18 @@
-<h1>Hello {{user}}</h1>
-<h href="/logout">Log out</a>
-
-<h1>Hello World</h1>
-<a href="/auth/google_oauth2">Log In</a>
+<div class="row">
+  <div class="large-6 large-offset-3 columns text-center">
+    <div class="panel">
+      <h2>Welcome {{user.first_name}}</h2>
+      <div ng-show='loggedin'>
+      <a href="/auth/google_oauth2" class="button large">
+        <i class="fa fa-google-plus-square"></i>
+        Login via Google
+      </a>
+       <p>Don't have an account yet? <i><a href="https://accounts.google.com/Signup">Sign up here &raquo</a></i></p>
+       </div>
+       <div ng-hide='loggedin'>
+       <h4></h4>
+       <button>Start Studying</button>
+       </div>
+    </div>
+  </div>
+</div>  

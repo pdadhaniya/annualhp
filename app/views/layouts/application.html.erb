@@ -20,8 +20,12 @@
   <section class="top-bar-section">
     <ul class="right">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="/auth/google_oauth2">Log In</a></li>
+      <% if current_user == nil %>
+      <li><%= link_to('Log In', '/auth/google_oauth2')%></li>
+      <!-- <li><a href="/auth/google_oauth2">Log In</a></li> -->
+      <% else %>
       <li><a href="/logout">Log Out {{user.first_name}}</a></li>
+      <% end %>
     </ul>
   </section>
   </nav>
