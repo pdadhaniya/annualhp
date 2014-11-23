@@ -1,6 +1,22 @@
 source 'https://rubygems.org'
 
+gem 'foundation-rails'
+gem 'bower-rails'
+gem 'angularjs-rails'
 
+gem 'rails_12factor', group: :production
+
+group :test do
+  gem 'rspec-rails'
+end
+
+group :test, :development do
+  gem 'pry-debugger'
+end
+
+gem "omniauth-google-oauth2"
+
+gem 'figaro'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use postgresql as the database for Active Record
