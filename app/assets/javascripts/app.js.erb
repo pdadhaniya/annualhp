@@ -6,6 +6,14 @@ app.config(['$routeProvider',
     templateUrl: "<%= asset_path('templates/home.html') %>",
     controller: 'HomeCtrl'
   })
+  .when("/menu", {
+    templateUrl: "<%= asset_path('templates/menu.html') %>",
+    controller: 'MenuCtrl'
+  })
+  .when("/top100", {
+    templateUrl: "<%= asset_path('templates/top100.html') %>",
+    controller: 'Top100Ctrl'
+  })
   .otherwise({
     redirectTo: "/"
   })

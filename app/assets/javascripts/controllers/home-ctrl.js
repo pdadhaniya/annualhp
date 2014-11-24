@@ -7,4 +7,7 @@ app.controller('HomeCtrl', ['$scope', '$location', 'User',
         $scope.loggedin = false
       }
     })
+    $scope.startStudying = function() {
+      $location.path('/menu');
+    };
   }]);
