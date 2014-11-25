@@ -7,7 +7,6 @@ Rails.application.routes.draw do
     get '/current-user' => "users#show"
   end
 
-  get '/top100' => "home#top100"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

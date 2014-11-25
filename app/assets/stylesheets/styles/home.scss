@@ -1,0 +1,94 @@
+/** {*/
+  /*border: 1px solid red;*/
+/*}*/
+
+.home {
+  /*height: 880px;*/
+  max-width: 100%;
+}
+
+.picture {
+  background: url('../hp2.jpg') no-repeat;
+  background-size: cover;
+  border-top: solid #cecece 1px;
+  height: 860px;
+  max-width: 100%;
+  opacity: 0.6;
+  transition: opacity 3s ease;
+}
+
+.picture:hover {
+  opacity: 1;
+}
+
+.panel {
+  margin-top: 10px;
+  padding-top: 10px;
+  background-color: #fff;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 10px;
+}
+
+.panela h2 {
+  color: black;
+}
+
+button {
+  width: 200px;
+  border-radius: 10px;
+  background: #61b8db;
+  background-image: -webkit-linear-gradient(top, rgba(97,184,219,0), rgba(48,141,196,1));
+  padding: 20px 20px 20px 20px;
+  font-size: 125%;
+  margin-left: 0px;
+}
+
+.infowrapper:hover {
+  opacity: 1;
+  /*background: rgba(255,255,255,0.5);*/
+}
+
+/*.info:hover {
+  background: url('../holidaysnow2.png') no-repeat;
+  background-size: cover;
+}
+*/
+.infowrapper {
+  background: url('../holidaysnow2.png') no-repeat;
+  background-size: cover;
+  /*background-attachment: fixed;*/
+  /*background-position: center; */
+  /*width: 100%;*/
+  /*background: rgba(255,255,255,0.7)*/
+  height: 400px;
+  /*margin-top: -10px;*/
+  padding-top: 10px;
+  opacity: 0.7;
+  transition: opacity 2s ease;
+}
+
+.presentwrapper {
+  height: 600px;
+  background: url('../presents2.jpg');
+  background-size: 100% 100%;
+  margin: 0px 0 0 0;
+  padding-top: 20px;
+  opacity: 0.8;
+  transition: opacity 2s ease;
+}
+
+.presentwrapper:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+

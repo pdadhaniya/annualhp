@@ -8,6 +8,6 @@ app.controller('HomeCtrl', ['$scope', '$location', 'User',
       }
     })
     $scope.startStudying = function() {
-      $location.path('/menu');
+      alert("HAHAHA")
     };
   }]);

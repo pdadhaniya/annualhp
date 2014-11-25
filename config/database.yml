@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: boards-review_development
+  database: annualhp_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: boards-review_test
+  database: annualhp_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: boards-review_production
+  database: annualhp_production
   username: boards-review
   password: <%= ENV['BOARDS-REVIEW_DATABASE_PASSWORD'] %>
