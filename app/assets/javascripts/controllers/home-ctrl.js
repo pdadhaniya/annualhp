@@ -7,7 +7,7 @@ app.controller('HomeCtrl', ['$scope', '$location', 'User',
         $scope.loggedin = false
       }
     })
-    $scope.startStudying = function() {
-      alert("HAHAHA")
+    $scope.seeRSVP = function() {
+      $location.path('/rsvp');
     };
   }]);

@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="rsvpheader text-center">
+    <h1>RSVP</h1>
+  </div>
+  <div class="large-6 columns small-centered text-center">
+    <table>
+      <thead>
+        <tr>
+          <th width="200">Name</th>
+          <th>Attending?</th>
+        </tr>
+      </thead>
+      <tbody ng-repeat="user in allUsers">
+        <tr>
+          <td>{{user.full_name}}</td>
+          <td>{{user.email}}</td>
+        </tr>
+       </tbody>
+    </table>
+  </div>
+</div>
