@@ -1,9 +1,13 @@
 app.factory('User', ['$resource',
   function($resource) {
     var userRsc = $resource('/api/current-user');
-    var users = $resource('/users');
+    var users = $resource(
+      '/users/:id',
+      {id: '@id'},
+      {update: {method: "PATCH"}}
+    );
     return {
-      currentUser: userRsc.get(),
-      allUsers: users.query()
+      currentUser: userRsc,
+      allUsers: users
     };
   }]);

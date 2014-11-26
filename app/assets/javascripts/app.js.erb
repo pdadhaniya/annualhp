@@ -10,6 +10,10 @@ app.config(['$routeProvider',
     templateUrl: "<%= asset_path('templates/rsvp.html') %>",
     controller: 'RSVPCtrl'
   })
+  .when("/potluck", {
+    templateUrl: "<%= asset_path('templates/potluck.html') %>",
+    controller: 'PotluckCtrl'
+  })
   .otherwise({
     redirectTo: "/"
   })

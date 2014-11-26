@@ -1,29 +1,26 @@
 <div class="row">
   <div class="large-6 columns small-centered text-center">
   <!-- <div ng-show="response"> -->
-    <h1>Will you be attending?</h1>
-    <select ng-model="user.rsvp">
-      <option value="Yes">Yes</option>
-      <option value="No">No</option>
-    </select>
-    <button ng-click="updateRSVP(user)" class="small">Submit</button>
+    <h1>What are you bringing?</h1>
+      <input type="textarea" ng-model="user.first_name" class="med"><br>
+    <button ng-click="updateEntree(user)" class="small">Submit</button>
   <!-- </div> -->
   </div>
   <div class="rsvpheader text-center">
-    <h1>RSVP</h1>
+    <h1>Potluck</h1>
   </div>
   <div class="large-6 columns small-centered text-center">
     <table>
       <thead>
         <tr>
           <th>Name</th>
-          <th>Attending?</th>
+          <th>Entree</th>
         </tr>
       </thead>
       <tbody ng-repeat="user in allUsers">
         <tr>
           <td>{{user.full_name}}</td>
-          <td>{{user.rsvp}}</td>
+          <td>{{user.entree}}</td>
         </tr>
        </tbody>
     </table>

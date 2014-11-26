@@ -1,0 +1,1 @@
+json.extract! @user, :first_name, :last_name, :full_name, :email, :image_url, :google_uid, :rsvp
