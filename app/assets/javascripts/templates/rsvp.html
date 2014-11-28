@@ -1,16 +1,19 @@
 <div class="row">
-  <div class="large-6 columns small-centered text-center">
-  <!-- <div ng-show="response"> -->
-    <h1>Will you be attending?</h1>
+  <div class="large-8 columns small-centered text-center">
+  <div ng-show="response">
+    <h1>Will you be attending {{user.first_name}}?</h1>
     <select ng-model="user.rsvp">
       <option value="Yes">Yes</option>
       <option value="No">No</option>
     </select>
     <button ng-click="updateRSVP(user)" class="small">Submit</button>
-  <!-- </div> -->
+  </div>
   </div>
   <div class="rsvpheader text-center">
     <h1>RSVP</h1>
+    <div ng-show="update">
+      <button ng-click="seeForm()" class="small">Update</button>
+    </div>
   </div>
   <div class="large-6 columns small-centered text-center">
     <table>

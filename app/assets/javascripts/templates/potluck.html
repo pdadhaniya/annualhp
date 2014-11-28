@@ -1,13 +1,16 @@
 <div class="row">
   <div class="large-8 columns small-centered text-center">
-  <!-- <div ng-show="response"> -->
+  <div ng-show="response">
     <h1>What are you bringing {{user.first_name}}?</h1>
       <input type="text" ng-model="user.potluck" class="med"><br>
     <button ng-click="updatePotluck(user)" class="small">Submit</button>
-  <!-- </div> -->
+  </div>
   </div>
   <div class="potluckheader text-center">
     <h1>Potluck</h1>
+    <div ng-show="update">
+      <button ng-click="seeForm()" class="small">Update</button>
+    </div>
   </div>
   <div class="large-6 columns small-centered text-center">
     <table>
