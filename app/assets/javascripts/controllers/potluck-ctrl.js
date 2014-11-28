@@ -9,9 +9,10 @@ app.controller('PotluckCtrl', ['$scope', '$location', 'User',
     //   }
     // });
     $scope.allUsers = User.allUsers.query();
-    $scope.updateEntree = function(food){
+    $scope.updatePotluck = function(food){
       User.allUsers.update(food).$promise.then(function(){
         $scope.allUsers = User.allUsers.query();
+        console.log(food)
       });      
     }
   }]);

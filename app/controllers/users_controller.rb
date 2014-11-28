@@ -12,7 +12,6 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    # binding.pry
     respond_to do |format|
       if @user.update(user_params)
         format.json { render :show}
@@ -25,6 +24,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:id, :first_name, :last_name, :full_name, :email, :image_url, :google_uid, :rsvp, :created_at, :updated_at)
+    params.require(:user).permit(:id, :first_name, :last_name, :full_name, :email, :image_url, :google_uid, :rsvp, :potluck, :created_at, :updated_at)
   end
 end
