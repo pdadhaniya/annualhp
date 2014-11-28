@@ -14,21 +14,21 @@
   <body ng-app="annualHPApp">
   <nav class="top-bar" data-topbar role="navigation" ng-controller="NavbarCtrl">
   <ul class="title-area">
-    <li class="name"><h1><a href="/">Annual HP</a></h1></li>
+    <li class="name"><h1><a href="#/">Annual HP</a></h1></li>
   </ul>
 
   <section class="top-bar-section">
     <ul class="left">
       <li class="has-dropdown">
-        <a href='/'>Info</a>
+        <a href='#/'>Info</a>
         <ul class="dropdown">
-          <li><a href="/rsvp">People</a></li>
-          <li><a href="/potluck">Potluck</a></li>
+          <li><a href="#/rsvp">People</a></li>
+          <li><a href="#/potluck">Potluck</a></li>
         </ul>
       </li>
     </ul>
     <ul class="right">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="#/">Home</a></li>
       <% if current_user == nil %>
       <li><%= link_to('Log In', '/auth/google_oauth2')%></li>
       <!-- <li><a href="/auth/google_oauth2">Log In</a></li> -->
