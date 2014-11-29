@@ -1,11 +1,12 @@
+<div class="rsvp">
 <div class="row">
   <div class="large-8 columns small-centered text-center">
   <div ng-show="response">
     <h1>Will you be attending {{user.first_name}}?</h1>
-    <select ng-model="user.rsvp">
+    <select class ="yesno" ng-model="user.rsvp">
       <option value="Yes">Yes</option>
       <option value="No">No</option>
-    </select>
+    </select><br>
     <button ng-click="updateRSVP(user)" class="small">Submit</button>
     <button ng-click="cancel()" class="small">Cancel</button>
   </div>
@@ -32,4 +33,5 @@
        </tbody>
     </table>
   </div>
+</div>
 </div>
