@@ -14,11 +14,16 @@
 .potluckheader h1 {
   color: black;
 }
-
-.panel {
-  width: 40%;
-}
+/*
+.potluckfield {
+  width: 100%;
+}*/
 
 .potluck div div h1 {
   color: black;
+}
+
+td {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
 }

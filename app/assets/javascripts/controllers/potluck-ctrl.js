@@ -8,10 +8,11 @@ app.controller('PotluckCtrl', ['$scope', '$location', 'User',
         $scope.response = false;
       }
     });
-    $scope.allUsers = User.allUsers.query();
+    $scope.allUsers = User.attendees();
     $scope.seeForm = function() {
       $scope.response = true;
       $scope.update = false;
+      console.log(User.attendees())
     };
     $scope.cancel = function() {
       $scope.update = true;
