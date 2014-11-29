@@ -10,14 +10,14 @@
       </thead>
       <tbody ng-repeat="user in allUsers">
         <tr>
-          <td width="200">{{user.full_name}}</td>
-          <td width="200">{{user.rsvp}}</td>
+          <td width="300">{{user.full_name}}</td>
+          <td width="100">{{user.rsvp}}</td>
         </tr>
        </tbody>
     </table>
   </div>
   <div class="large-8 columns text-center">
-  <div ng-show="response">
+  <div ng-show="response" class="panel">
     <h1>Will you be attending {{user.first_name}}?</h1>
     <select class ="yesno" ng-model="user.rsvp">
       <option value="Yes">Yes</option>

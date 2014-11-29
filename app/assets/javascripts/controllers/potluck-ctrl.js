@@ -8,11 +8,20 @@ app.controller('PotluckCtrl', ['$scope', '$location', 'User',
         $scope.response = false;
       }
     });
-    $scope.allUsers = User.attendees();
+    $scope.allUsers = User.allUsers.query();
+    $scope.allUsers.$promise.then(function(data){
+      var yesArray = [];
+      for (var x = 0; x < data.length; x++) {
+        if (data[x].rsvp === "Yes") {
+          yesArray.push(data[x]);
+        }
+      }
+      $scope.attendees = yesArray;
+      console.log($scope.attendees);
+    })
     $scope.seeForm = function() {
       $scope.response = true;
       $scope.update = false;
-      console.log(User.attendees())
     };
     $scope.cancel = function() {
       $scope.update = true;
@@ -21,6 +30,16 @@ app.controller('PotluckCtrl', ['$scope', '$location', 'User',
     $scope.updatePotluck = function(food){
       User.allUsers.update(food).$promise.then(function(){
         $scope.allUsers = User.allUsers.query();
+        $scope.allUsers.$promise.then(function(data){
+          var yesArray = [];
+          for (var x = 0; x < data.length; x++) {
+            if (data[x].rsvp === "Yes") {
+              yesArray.push(data[x]);
+            }
+          }
+          $scope.attendees = yesArray;
+          console.log($scope.attendees);
+        })
         $scope.update = true;
         $scope.response = false;
       });      
