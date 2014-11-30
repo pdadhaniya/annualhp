@@ -4,15 +4,15 @@
       <table>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Category</th>
-            <th>Item</th>
+            <th><a href="" ng-click="predicate = 'full_name'; reverse=false">Name</a></th>
+            <th><a href="" ng-click="predicate = 'category'; reverse=!reverse">Category</a></th>
+            <th><a href="" ng-click="predicate = 'potluck'; reverse=!reverse">Item</a></th>
           </tr>
         </thead>
-        <tbody ng-repeat="user in attendees">
+        <tbody ng-repeat="user in attendees | orderBy:predicate:reverse">
           <tr>
             <td>{{user.full_name}}</td>
-            <td>Appetizer</td>
+            <td>{{user.category}}</td>
             <td>{{user.potluck}}</td>
           </tr>
          </tbody>
