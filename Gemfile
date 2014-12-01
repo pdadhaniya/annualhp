@@ -12,12 +12,12 @@ group :test do
 end
 
 group :test, :development do
-  gem 'pry-debugger'
+  # gem 'pry-debugger'
 end
 
 gem "omniauth-google-oauth2"
 
-gem 'figaro'
+gem 'figaro', github: 'laserlemon/figaro'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use postgresql as the database for Active Record
