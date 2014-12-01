@@ -4,7 +4,7 @@ app.controller('HomeCtrl', ['$scope', '$location', 'User',
     $scope.loggedin = true;
     $scope.user.$promise.then(function(data){
       if ($scope.user.google_uid) {
-        $scope.loggedin = false
+        $scope.loggedin = false;
       }
     })
     $scope.seeRSVP = function() {

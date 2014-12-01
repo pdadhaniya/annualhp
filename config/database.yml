@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: annualhp_production
-  username: boards-review
-  password: <%= ENV['BOARDS-REVIEW_DATABASE_PASSWORD'] %>
+  username: 
+  password: 

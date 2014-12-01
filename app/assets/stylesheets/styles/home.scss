@@ -1,14 +1,10 @@
-/** {*/
-  /*border: 1px solid red;*/
-/*}*/
 
 .home {
-  /*height: 880px;*/
   max-width: 100%;
 }
 
 .picture {
-  background: url('../hp2.jpg') no-repeat;
+  background: url('../hp3.png') no-repeat;
   background-size: cover;
   border-top: solid #cecece 1px;
   height: 860px;
@@ -45,23 +41,12 @@ button {
 
 .infowrapper:hover {
   opacity: 1;
-  /*background: rgba(255,255,255,0.5);*/
 }
 
-/*.info:hover {
-  background: url('../holidaysnow2.png') no-repeat;
-  background-size: cover;
-}
-*/
 .infowrapper {
   background: url('../holidaysnow2.png') no-repeat;
   background-size: cover;
-  /*background-attachment: fixed;*/
-  /*background-position: center; */
-  /*width: 100%;*/
-  /*background: rgba(255,255,255,0.7)*/
   height: 800px;
-  /*margin-top: -10px;*/
   padding-top: 10px;
   opacity: 0.8;
   transition: opacity 2.5s ease;
@@ -81,7 +66,13 @@ button {
   opacity: 1;
 }
 
+.addthisevent {
+  visibility: visible;
+}
 
+.pictureheight {
+  height: auto;
+}
 
 
 
