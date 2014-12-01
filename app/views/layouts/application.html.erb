@@ -14,11 +14,15 @@
   <body ng-app="annualHPApp">
   <nav class="top-bar" data-topbar role="navigation" ng-controller="NavbarCtrl">
   <ul class="title-area">
-    <li class="name"><h1><a href="#/">3rd Annual Holiday Party</a></h1></li>
+    <li class="name"><h1><a href="#/">3rd Annual Holiday Party!</a></h1></li>
+  </ul>
+  <ul class="title-area">
+  </ul>
+  <ul class="title-area">
   </ul>
 
   <section class="top-bar-section">
-    <ul class="left">
+    <!-- <ul class="left">
       <li class="has-dropdown">
         <a href='#/'>Info</a>
         <ul class="dropdown">
@@ -26,13 +30,16 @@
           <li><a href="#/potluck">Potluck</a></li>
         </ul>
       </li>
-    </ul>
+    </ul> -->
     <ul class="right">
-      <li class="active"><a href="#/">Home</a></li>
+      <!-- <li class="name"><h1><a href="#/">Home</a></h1></li> -->
+      <!-- <li class="active"><a href="#/">Home</a></li> -->
       <% if current_user == nil %>
       <li><%= link_to('Log In', '/auth/google_oauth2')%></li>
       <!-- <li><a href="/auth/google_oauth2">Log In</a></li> -->
       <% else %>
+      <li class="name"><h1><a href="#/rsvp">RSVP</a></h1></li>
+      <li class="name"><h1><a href="#/potluck">Potluck</a></h1></li>
       <li><a href="/logout">Log Out <span ng-bind="user.first_name"></span></a></li>
       <% end %>
     </ul>
@@ -41,5 +48,6 @@
 
     <%= yield %>
     <%= javascript_include_tag "application" %>
+    <script type="text/javascript" src="https://addthisevent.com/libs/1.5.8/ate.min.js"></script>
   </body>
 </html>

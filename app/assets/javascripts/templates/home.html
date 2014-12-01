@@ -3,12 +3,26 @@
   <!-- <div class="info container"> -->
   <div class="large-6 columns small-centered text-center">
     <div class="panel">
-      <h2>Welcome {{user.first_name}}</h2>
+      <h2>Welcome {{user.first_name}}!</h2>
       <div ng-hide='loggedin'>
       <p>
       3rd Annual Holiday Party!!!<br>
       When: 5:00 PM, Saturday, December 20th, 2014<br>
-      Where: 1267 N. Honore St., Chicago, IL 60622
+      Where: 1267 N. Honore St., Chicago, IL 60622<br>
+      <a href="http://example.com/link-to-your-event" title="Add to Calendar" class="addthisevent" data-direct="google">
+        Add to Calendar
+        <span class="_start">12-20-2014 17:00:00</span>
+        <span class="_end">12-21-2014 03:00:00</span>
+        <span class="_zonecode">11</span>
+        <span class="_summary">3rd Annual Holiday Party!</span>
+        <span class="_description"></span>
+        <span class="_location">Chicago, IL</span>
+        <span class="_organizer"></span>
+        <span class="_organizer_email"></span>
+        <span class="_facebook_event"></span>
+        <span class="_all_day_event">false</span>
+        <span class="_date_format">DD/MM/YYYY</span>
+      </a>
       </p>
       <div ng-hide='loggedin'>
         <button class="large" ng-click="seeRSVP()">RSVP</button>
@@ -38,11 +52,12 @@
   <div class="presentwrapper">
   <div class="large-6 columns small-centered text-center">
     <div class="panel two">
-      <h2>White Elephant</h2>
-      <div ng-hide='loggedin'>
+      <h2>Information</h2>
+      <div class="text-left" ng-hide='loggedin'>
       <p>
-      Please bring a wrapped gift for White Elephant<br>
-      Cost: $25<br>
+      White Elephant: Please bring a wrapped gift costing less than $25<br>
+      Potluck: All items must be Vegetarian!<br>
+      +1's: All are welcome! Please have them register here<br>
       </p>
       </div>
     </div>
