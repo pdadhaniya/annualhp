@@ -10,6 +10,17 @@
       When: 5:00 PM, Saturday, December 20th, 2014<br>
       Where: 1267 N. Honore St., Chicago, IL 60622
       </p>
+      <div ng-hide='loggedin'>
+        <button class="large" ng-click="seeRSVP()">RSVP</button>
+        <button class="large" ng-click="seePotluck()">Potluck</button>
+      </div>
+      <iframe
+        width="600"
+        height="450"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCB3Ca4V0Po_5SqQMOwdHXohBIgiGFIla8
+        &q=1267+N+Honore+St,Chicago+IL">
+      </iframe>
       </div>
       <div ng-show='loggedin'>
         <a href="/auth/google_oauth2" class="button large">
@@ -17,10 +28,6 @@
           Login via Google
         </a>
          <p>Don't have an account yet? <i><a href="https://accounts.google.com/Signup">Sign up here &raquo</a></i></p>
-      </div>
-      <div ng-hide='loggedin'>
-        <button class="large" ng-click="seeRSVP()">RSVP</button>
-        <button class="large" ng-click="seePotluck()">Potluck</button>
       </div>
     </div>
   </div>

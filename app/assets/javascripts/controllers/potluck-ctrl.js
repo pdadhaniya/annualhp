@@ -17,7 +17,6 @@ app.controller('PotluckCtrl', ['$scope', '$location', 'User',
         }
       }
       $scope.attendees = yesArray;
-      console.log($scope.attendees);
     })
     $scope.seeForm = function() {
       $scope.response = true;
@@ -38,7 +37,6 @@ app.controller('PotluckCtrl', ['$scope', '$location', 'User',
             }
           }
           $scope.attendees = yesArray;
-          console.log($scope.attendees);
         })
         $scope.update = true;
         $scope.response = false;

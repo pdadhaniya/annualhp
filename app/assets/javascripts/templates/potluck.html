@@ -1,5 +1,5 @@
 <div class="potluck">
-  <div class="row potluckrow">
+  <div class="potluckrow">
     <div class="large-6 columns">
       <table>
         <thead>
@@ -9,11 +9,11 @@
             <th><a href="" ng-click="predicate = 'potluck'; reverse=!reverse">Item</a></th>
           </tr>
         </thead>
-        <tbody ng-repeat="user in attendees | orderBy:predicate:reverse">
-          <tr>
-            <td>{{user.full_name}}</td>
-            <td>{{user.category}}</td>
-            <td>{{user.potluck}}</td>
+        <tbody class="potluck-table" ng-repeat="user in attendees | orderBy:predicate:reverse">
+          <tr ng-class-odd="'odd'" ng-class-even="'even'">
+            <td width="800">{{user.full_name}}</td>
+            <td width="270">{{user.category}}</td>
+            <td width="800">{{user.potluck}}</td>
           </tr>
          </tbody>
       </table>
