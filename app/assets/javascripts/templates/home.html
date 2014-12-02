@@ -2,24 +2,36 @@
   <div class="infowrapper">
     <div class="large-6 columns small-centered text-center">
       <div class="panel">
-        <h2>Welcome {{user.first_name}}!</h2>
+        <h1>Welcome {{user.first_name}}!</h1>
         <div ng-hide='loggedin'>
         <p>
-        3rd Annual Holiday Party!!!<br>
-        When: 5:00 PM, Saturday, December 20th, 2014<br>
-        Where: 1001 W. 15th St., Apt. #343, Chicago, IL 60608<br>
+        <h2>3rd Annual Holiday Party!!!</h2>
+        <div class="text-left">
+        <strong>When:</strong> 5:00 PM, Saturday, December 20th, 2014<br>
+        <strong>Where:</strong> 1001 W. 15th St., Apt. #343, Chicago, IL 60608<br>
+        <!-- </p> -->
+        <!-- <h2>Event Information</h2> -->
+        <!-- <div class="text-left" ng-hide='loggedin'> -->
+        <!-- <p> -->
+        <strong>Theme:</strong> Dress like the holidays!<br>
+        <strong>White Elephant:</strong> Please bring a wrapped gift costing $25<br>
+        <strong>Potluck:</strong> All items must be Vegetarian! Keep in mind there will be ~30 people<br>
+        <strong>Drinks:</strong> If you have been assigned beer, bring bottles if possible<br>
+        <strong>+1's:</strong> All are welcome! Please have them RSVP<br>
+        </div>
         </p>
+        <!-- </div> -->
         <div ng-hide='loggedin'>
           <button class="large" ng-click="seeRSVP()">RSVP</button>
           <button class="large" ng-click="seePotluck()">Potluck</button>
         </div>
-        <iframe
-          width="600"
-          height="450"
+<!--         <iframe
+          width="400"
+          height="300"
           frameborder="0" style="border:0"
           src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCB3Ca4V0Po_5SqQMOwdHXohBIgiGFIla8
           &q=1001+W+15th+ST,Chicago+IL">
-        </iframe>
+        </iframe> -->
         </div>
         <div ng-show='loggedin'>
           <a href="/auth/google_oauth2" class="button large">
@@ -32,24 +44,24 @@
     </div>
   </div>
 </div> 
-<div ng-hide="loggedin" class="row home">
+<!-- <div ng-hide="loggedin" class="row home">
   <div class="presentwrapper">
-  <div class="large-6 columns small-centered text-center">
-    <div class="panel two">
-      <h2>Information</h2>
-      <div class="text-left" ng-hide='loggedin'>
-      <p>
-      Theme: Dress like the holidays!<br>
-      White Elephant: Please bring a wrapped gift costing $25<br>
-      Potluck: All items must be Vegetarian! Keep in mind there will be ~30 people<br>
-      Drinks: If you have been assigned beer, bring bottles if possible<br>
-      +1's: All are welcome! Please have them RSVP<br>
-      </p>
+    <div class="large-6 columns small-centered text-center">
+      <div class="panel two">
+        <h2>Event Information</h2>
+        <div class="text-left" ng-hide='loggedin'>
+        <p>
+        <strong>Theme:</strong> Dress like the holidays!<br>
+        <strong>White Elephant:</strong> Please bring a wrapped gift costing $25<br>
+        <strong>Potluck:</strong> All items must be Vegetarian! Keep in mind there will be ~30 people<br>
+        <strong>Drinks:</strong> If you have been assigned beer, bring bottles if possible<br>
+        <strong>+1's:</strong> All are welcome! Please have them RSVP<br>
+        </p>
+        </div>
       </div>
     </div>
   </div>
-  </div>
-</div>
+</div> -->
 <div ng-hide="loggedin" class="row home">
   <div class="pictureheight">
     <div class="picture container">
