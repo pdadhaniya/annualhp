@@ -3,7 +3,7 @@ app.controller('RSVPCtrl', ['$scope', '$location', 'User',
     $scope.response = true;
     $scope.user = User.currentUser.get();
     $scope.user.$promise.then(function(data){
-      if (data.rsp !== null) {
+      if (data.rsvp !== null) {
         $scope.update = true;
         $scope.response = false;
       }
