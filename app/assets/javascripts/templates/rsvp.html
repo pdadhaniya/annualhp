@@ -4,11 +4,11 @@
       <table>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Attending?</th>
+            <th><a href="" ng-click="predicate = 'full_name'; reverse=!reverse">Name</a></th>
+            <th><a href="" ng-click="predicate = 'rsvp'; reverse=!reverse">Attending?</a></th>
           </tr>
         </thead>
-        <tbody class="rsvp-table" ng-repeat="user in allUsers">
+        <tbody class="rsvp-table" ng-repeat="user in allUsers | orderBy:predicate:reverse">
           <tr ng-class-odd="'odd'" ng-class-even="'even'">
             <td width="900">{{user.full_name}}</td>
             <td width="200">{{user.rsvp}}</td>
